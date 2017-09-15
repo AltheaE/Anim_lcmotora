@@ -1,0 +1,15 @@
+
+.train-wrapper{
+    position: absolute;
+    animation: train-left 3s linear ;
+}
+
+@keyframes train-left {
+    0%{
+        margin-left: 100%;
+    }
+    100{
+        margin-left: 0%;
+    }
+
+}

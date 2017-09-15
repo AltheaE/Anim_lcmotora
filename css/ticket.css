@@ -1,0 +1,74 @@
+
+*{
+    margin:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: darkgreen;
+
+}
+
+.ticker-hidder{
+    background-color: darkgreen;
+    position: relative;
+    z-index: 10;
+    height:120px;
+}
+
+.machine {
+    position: relative;
+    width: 300px;
+    margin: 0 auto;
+}
+
+.machine img {
+    display: block;
+    max-width: 100%;
+}
+
+.machine-a {
+    z-index: 4;
+}
+.machine-b {
+    z-index: 1;
+}
+
+.ticket-wrapper {
+
+    position: absolute;
+    width: 250px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+
+
+}
+.animate-ticket{
+    animation: ticket-up 1.5s linear ;
+}
+
+.ticket {
+    display: block;
+    max-width: 100%;
+}
+
+@keyframes ticket-up {
+
+    0% {
+        bottom:18%;
+  }
+
+25%{
+    bottom:25%;
+}
+50%{
+    bottom: 18%;
+}
+75%{
+    bottom:50%;
+}
+  100% {
+    bottom:100%;
+
+  }
+}

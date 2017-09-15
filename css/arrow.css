@@ -1,0 +1,20 @@
+.arrow-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: arrow-left 1.5s linear infinite ;
+}
+
+@keyframes arrow-left {
+    0%{
+        right:20px;
+    }
+    50%{
+        right:30px;
+        opacity: 0.5;
+    }
+    100%{
+        right:20px;
+    }
+}
