@@ -1,4 +1,4 @@
-.arrow-wrapper{
+.arrowleft-wrapper{
     display: flex;
     justify-content: center;
     align-items: center;
@@ -16,5 +16,26 @@
     }
     100%{
         right:20px;
+    }
+}
+
+.arrowdown-wrapper{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    animation: arrow-down 1.5s linear infinite ;
+}
+
+@keyframes arrow-down {
+    0%{
+        top:20px;
+    }
+    50%{
+        top:30px;
+        opacity: 0.5;
+    }
+    100%{
+        top:20px;
     }
 }
